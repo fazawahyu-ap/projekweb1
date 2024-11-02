@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONTAK</title>
+    <link rel="stylesheet" href="style_kontak.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="C:\Users\fazaw\OneDrive\Desktop\projek web uts\profilicon.jpg" alt="profile-icon" class="profile-nav-logo">
+            <ul class="nav-links">
+                <li><a href="C:\Users\fazaw\OneDrive\Desktop\projek web uts\awalan\Project_1.html"> PREVIOUS </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="social-section">
+        <h1>SOCIAL</h1>
+        <h1 class="h1-title">_____________________</h1>
+        <div class="contact-options">
+            <div class="box-option">
+                <img src="ig.jpg" alt="IG Icon" class="icon-ig">
+                <h2>Instagram</h2>
+                <p>@faza_wap</p>
+                <button class="start-btn" onclick="window.open('https://www.instagram.com/faza_wap','_blank')">INSTAGRAM</button>
+            </div>
+            <div class="box-option">
+                <img src="linkedin.png" alt="Linked In Icon" class="icon-linkedin">
+                <h2>Linkedin</h2>
+                <p>Connect Me on LinkedIn</p>
+                <button class="start-btn" onclick="window.open('https://www.linkedin.com/in/faza-wap', '_blank')">LINKEDIN</button>
+            </div>
+            <div class="box-option">
+                <img src="discord.png" alt="Discord Icon" class="icon-dc">
+                <h2>Discord</h2>
+                <p>Join on My Community Discord</p>
+                <button class="start-btn" onclick="window.open('https://discord.gg/HQKhUB2x', '_blank')">DISCORD</button>
+            </div>
+    </div>
+        <div class="social-section-komen">
+            <form action="simpan.php" method="post">
+                <div class="komen-option">
+                    <div class="box-option-komen">
+                        <h3>FEEDBACK TYPE</h3>
+                        <div class="feedback-type">
+                            <label><input type="radio" name="feedback" value="Comments"> Comments</label>
+                            <label><input type="radio" name="feedback" value="Suggestions"> Suggestions</label>
+                            <label><input type="radio" name="feedback" value="Questions"> Questions</label>
+                        </div>
+            
+                        <h3>KOMENTAR / FEEDBACK</h3>
+                        <textarea class="komen" cols="30" rows="4"></textarea>
+            
+                        <h3>E-MAIL</h3>
+                        <input type="text" id="email" placeholder="Isi email Anda" onblur="addDefaultDomain()"list="email-suggestions" required>
+                        <datalist id="email-suggestions">
+                            <option value="@gmail.com">
+                            <option value="@yahoo.co.id">
+                            <option value="@outlook.com">
+                        </datalist>
+            
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="anonymous" onclick="toggleAnonymous()">
+                            <label for="anonymous">Anonymous</label>
+                        </div>
+            
+                        <input type="submit" name="btnkrm" value="kirim">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>About Me</h3>
+                    <p>Hello! I'm Faza, this is my first portofolio web.</p><p>Connect with me on social media!</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <a href="https://www.instagram.com/faza_wap" target="_blank">Instagram</a> |
+                    <a href="https://www.linkedin.com/in/faza-wap" target="_blank">LinkedIn</a> |
+                    <a href="https://discord.gg/HQKhUB2x" target="_blank">Discord</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: fazawahyu10@outlook.com</p>
+                    <p>Phone: +62 852 9413 9950</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Faza Web Portofolio | Designed by Faza</p>
+            </div>
+        </footer>
+
+        <script>
+            function addDefaultDomain() {
+                const emailField = document.getElementById("email");
+                const emailValue = emailField.value;
+
+                if (emailValue && !emailValue.includes("@")) {
+                    emailField.value = emailValue + "@gmail.com";
+                }
+            }
+            function toggleAnonymous() {
+                const nameField = document.getElementById("email");
+                const isAnonymous = document.getElementById("anonymous").checked;
+                
+                if (isAnonymous) {
+                    nameField.value = "SOMEONE";
+                    nameField.disabled = true;
+                } else {
+                    nameField.value = "";
+                    nameField.disabled = false;
+                }
+            }
+        </script>
+        
+</body>
+</html>
