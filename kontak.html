@@ -9,9 +9,9 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <img src="profilicon.jpg" alt="profile-icon" class="profile-nav-logo">
+            <img src="C:\Users\fazaw\OneDrive\Desktop\projek web uts\profilicon.jpg" alt="profile-icon" class="profile-nav-logo">
             <ul class="nav-links">
-                <li><a href="Project_1.html"> PREVIOUS </a></li>
+                <li><a href="C:\Users\fazaw\OneDrive\Desktop\projek web uts\awalan\Project_1.html"> PREVIOUS </a></li>
             </ul>
         </div>
     </nav>
@@ -39,7 +39,7 @@
             </div>
     </div>
         <div class="social-section-komen">
-            <form action="simpan.php" method="post">
+            <form action="simpan.php" method="post" onsubmit="return showAlert()">
                 <div class="komen-option">
                     <div class="box-option-komen">
                         <h3>FEEDBACK TYPE</h3>
@@ -58,6 +58,7 @@
                             <option value="@gmail.com">
                             <option value="@yahoo.co.id">
                             <option value="@outlook.com">
+                            <option value="@xyz.com">
                         </datalist>
             
                         <div class="checkbox-container">
@@ -65,7 +66,7 @@
                             <label for="anonymous">Anonymous</label>
                         </div>
             
-                        <input type="submit" name="btnkrm" value="kirim">
+                        <input type="submit" id="submit-btn" name="btnkrm" value="kirim">
                     </div>
                 </div>
             </form>
@@ -116,6 +117,11 @@
                     nameField.value = "";
                     nameField.disabled = false;
                 }
+            }
+
+            function showAlert() {
+                alert("Terima kasih banyak atas feedback-nya! Sangat membantu untuk pengembangan web ini :)");
+                return false; 
             }
         </script>
         
