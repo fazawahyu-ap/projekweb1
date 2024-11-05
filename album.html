@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gallery</title>
-    <link rel="stylesheet" href="style_album.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style_album.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <img src="profilicon.jpg" alt="profile-icon" class="profile-nav-logo">
-            <ul class="nav-links">
-                <li><a href="Project_1.html"> PREVIOUS </a></li>
-            </ul>
-        </div>
+      <div class="nav-container">
+        <img src="/profilicon.jpg" alt="profile-icon" class="profile-nav-logo"/>
+        <ul class="nav-links">
+          <li>
+            <a href="C:\Users\fazaw\OneDrive\Desktop\projek web uts\awalan\Project_1.html">PREVIOUS</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-   <div class="container">
-    <div class="header">
+
+    <div class="container">
+      <div class="header">
         <h1>MY JOURNAL GALLERY PKL 2023</h1>
         <h2>___________________________</h2>
         <p><i>Maret 2023 - Desember 2023</i></p>
+      </div>
+      <div class="slideshow-container">
+        <img src="pkl1.jpg" alt="pkl1" class="slideshow-image" />
+      </div>
     </div>
-    <div class="gallery">
-        <img src="pkl1.jpg" alt="pkl1">
-        <img src="pkl0.jpg" alt="pkl2">
-        <img src="pkl2.jpg" alt="pkl3">
-        <img src="pkl4.jpg" alt="pkl4">
-        <img src="pm1.jpg" alt="pkl4">
-        <img src="troubleshooting5.jpg" alt="tr5">
-        <img src="Troubleshooting.jpg" alt="tr1">
-        <img src="troubleshooting2.jpg" alt="tr2">
-        <img src="Troubleshooting4.jpg" alt="tr4">
-        <img src="mt1.jpg" alt="tr3">
-    </div>
-   </div>
-   <footer>
-    <div class="footer-container">
+
+    <footer>
+      <div class="footer-container">
         <div class="footer-about">
-            <h3>About Me</h3>
-            <p>Hello! I'm Faza, this is my first portofolio web.</p>
-            <p>Connect with me on social media!</p>
+          <h3>About Me</h3>
+          <p>Hello! I'm Faza, this is my first portofolio web.</p>
+          <p>Connect with me on social media!</p>
         </div>
-        
         <div class="footer-social">
-            <h3>Follow Me</h3>
-            <a href="https://www.instagram.com/faza_wap" target="_blank">Instagram</a> |
-            <a href="https://www.linkedin.com/in/faza-wap" target="_blank">LinkedIn</a> |
-            <a href="https://discord.gg/HQKhUB2x" target="_blank">Discord</a>
+          <h3>Follow Me</h3>
+          <a href="https://www.instagram.com/faza_wap" target="_blank">Instagram</a>
+          |
+          <a href="https://www.linkedin.com/in/faza-wap" target="_blank">LinkedIn</a>
+          |
+          <a href="https://discord.gg/HQKhUB2x" target="_blank">Discord</a>
         </div>
-        
         <div class="footer-contact">
-            <h3>Contact</h3>
-            <p>Email: fazawahyu10@outlook.com</p>
-            <p>Phone: +62 852 9413 9950</p>
+          <h3>Contact</h3>
+          <p>Email: fazawahyu10@outlook.com</p>
+          <p>Phone: +62 852 9413 9950</p>
         </div>
-    </div>
-    <div class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
         <p>&copy; 2024 Faza Web Portofolio | Designed by Faza</p>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+
+    <script>
+      const images = [
+        "pkl1.jpg",
+        "pkl0.jpg",
+        "pkl2.jpg",
+        "pkl4.jpg",
+        "pm1.jpg",
+        "troubleshooting5.jpg",
+        "Troubleshooting.jpg",
+        "troubleshooting2.jpg",
+        "Troubleshooting4.jpg",
+        "mt1.jpg",
+      ];
+
+      let currentImageIndex = 0;
+      const slideshowImage = document.querySelector(".slideshow-image");
+
+      function showNextImage() {
+        // Fade out
+        slideshowImage.style.opacity = 0;
+
+        setTimeout(() => {
+          // Change the image source after fade-out
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          slideshowImage.src = images[currentImageIndex];
+
+          // Fade in
+          slideshowImage.style.opacity = 1;
+        }, 1000); // 1 second to match the CSS transition
+      }
+
+      // Set the interval to change images every 3 seconds
+      setInterval(showNextImage, 4000); // 4 seconds total delay (1s fade out + 3s display time)
+    </script>
+
+  </body>
 </html>
