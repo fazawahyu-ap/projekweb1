@@ -5,39 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KONTAK</title>
     <link rel="stylesheet" href="style_kontak.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <img src="profilicon.jpg" alt="profile-icon" class="profile-nav-logo">
             <ul class="nav-links">
-                <li><a href="Project_1.html"> PREVIOUS </a></li>
+                <li><a href="C:\Users\fazaw\OneDrive\Desktop\projek web uts\awalan\Project_1.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </nav>
-    <div class="social-section">
-        <h1>SOCIAL</h1>
-        <h1 class="h1-title">_____________________</h1>
-        <div class="contact-options">
-            <div class="box-option">
-                <img src="ig.jpg" alt="IG Icon" class="icon-ig">
-                <h2>Instagram</h2>
-                <p>@faza_wap</p>
-                <button class="start-btn" onclick="window.open('https://www.instagram.com/faza_wap','_blank')">INSTAGRAM</button>
-            </div>
-            <div class="box-option">
-                <img src="linkedin.png" alt="Linked In Icon" class="icon-linkedin">
-                <h2>Linkedin</h2>
-                <p>Connect Me on LinkedIn</p>
-                <button class="start-btn" onclick="window.open('https://www.linkedin.com/in/faza-wap', '_blank')">LINKEDIN</button>
-            </div>
-            <div class="box-option">
-                <img src="discord.png" alt="Discord Icon" class="icon-dc">
-                <h2>Discord</h2>
-                <p>Join on My Community Discord</p>
-                <button class="start-btn" onclick="window.open('https://discord.gg/HQKhUB2x', '_blank')">DISCORD</button>
-            </div>
-    </div>
         <div class="social-section-komen">
             <form action="simpan.php" method="post" onsubmit="return showAlert()">
                 <div class="komen-option">
@@ -66,7 +45,20 @@
                             <label for="anonymous">Anonymous</label>
                         </div>
             
-                        <input type="submit" id="submit-btn" name="btnkrm" value="kirim">
+                        <input type="submit" id="submit-btn" name="btnkrm" value="kirim" class="btn-kirim">
+
+                        <p class="social-p">SOCIAL</p>
+                        <div class="social-icons mt-3">
+                            <a href="https://www.instagram.com/faza_wap" target="_blank" class="icon-link">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/faza-wap" target="_blank" class="icon-link">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://discord.gg/HQKhUB2x" target="_blank" class="icon-link">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </form>
