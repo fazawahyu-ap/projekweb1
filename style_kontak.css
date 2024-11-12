@@ -15,32 +15,23 @@
     padding: 0 20px;
 }
 
-.profile-nav-logo {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    border: 3px solid grey;
-    margin-right: 20px; 
-}
-
 .nav-links {
     list-style: none;
     display: flex;
 }
 
 .nav-links li {
+    margin-top: 15px;
     margin-left: 20px;
 }
 
-.nav-links li a {
+.nav-links li a i {
     text-decoration: none;
     text-shadow: 2px 2px rgb(41, 41, 41);
     font-weight: bold;
     color: #cacaca;
     margin-right: 40px;
-    margin-left: 65px;
-    font-size: 1rem;
+    font-size: 1.8rem;
     transition: color 0.3s;
 }
 
@@ -64,258 +55,208 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-image: url('pixlr-image-generator-1b3217c6-eac2-47f3-8807-250f03badfd1.png');
-    background-size: cover; /* Mengatur gambar agar mencakup seluruh area */
-    background-position: center; /* Menempatkan gambar di tengah */
-    background-repeat: no-repeat; /* Mencegah gambar berulang */
-    background-attachment: fixed; /* Membuat background tetap saat di-scroll */
+  background-image: url("pixlr-image-generator-1b3217c6-eac2-47f3-8807-250f03badfd1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.social-section {
-    text-align: center;
-    margin-top: 4px;
-}
 .social-section-komen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
-    text-shadow: 0px 2px 4px #4d4d4df5;
-    color: #000000;
-    margin-bottom: 5px;
-    margin-top: 20px;
-}
-.h1-title {
-    font-size: 2rem;
-    text-shadow: 0px 2px 4px #fdfdfdf5;
-    color: #000000;
-    margin-top: 0px;
-}
-
-.contact-options {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
 .komen-option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #414141b9;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.425);
-    width: 100%;
-    max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #414141b9;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.425);
+  width: 100%;
+  max-width: 400px;
 }
 
-.box-option {
-    margin-top: 25px;
-    background-color: #414141b9;
-    border-radius: 20px;
-    box-shadow: 0px 2px 11px 15px rgba(43, 43, 43, 0.39);
-    padding: 20px;
-    width: 240px;
-    text-align: center;
-}
 .box-option-komen {
-    width: 100%;
-    margin-top: 20px;
-}
-.box-option:hover {
-    cursor: pointer;
-    transition-delay: 0.5s;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.icon-ig {
-    width: 150px;
-    height: 80px;
-    margin-bottom: 15px;
-}
-.icon-linkedin {
-    width: 91px;
-    height: 79px;
-    margin-bottom: 15px;
-}
-.icon-dc{
-    width: 107px;
-    height: 96px;
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 24px;
-    text-shadow: 2px 2px 3px rgb(0, 0, 0);
-    color: #fffffff5;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-.start-btn {
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 1s;
-}
-.start-btn {
-    color: #000000;
-    font-weight: bold;
-}
-
-.start-btn:hover {
-    background-color: #979797e1;
-}
-
-.komen{
-    border-radius: 10px;
-    margin-top: 10px;
+.komen {
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 form {
-    box-shadow: 0px 2px 11px 15px rgba(43, 43, 43, 0.39);
-    border-radius: 20px;
+  box-shadow: 0px 2px 11px 15px rgba(43, 43, 43, 0.39);
+  border-radius: 20px;
 }
 
-.box-option-komen h3{
-    font-size: 15px;
-    text-shadow: 2px 2px 3px rgb(0, 0, 0);
-    color: #fffffff5;
-    margin-bottom: 0;
+.box-option-komen h3 {
+  font-size: 15px;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  color: white;
+  margin-bottom: 0;
 }
 
 .komen-option input[type="text"],
 .komen-option textarea {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #1d1d1d;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #1d1d1d;
 }
 
 .komen-option .checkbox-container {
-    display: flex;
-    align-items: center;
-    margin-left: 6px;
-    margin-bottom: 25px;
-    margin-top: 0px;
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
-.checkbox-container label{
-    margin: 5px;
-    color: #fff;
-    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+.checkbox-container label {
+  margin: 5px;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .feedback-type {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .feedback-type label {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    text-shadow: 2px 2px 3px rgb(0, 0, 0);
-    cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  cursor: pointer;
 }
-
-
 .komen-option input[type="submit"] {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .komen-option input[type="submit"]:hover {
-    background-color: #858585c7;
+  background-color: #858585c7;
+}
+
+.btn-kirim {
+  margin-bottom: 20px;
+}
+
+.social-p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  border-bottom: 2.5px solid #858585c7;
+  border-top: 2.5px solid #858585c7;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 15px 10px;
+}
+
+.icon-link {
+  color: #ccc;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.icon-link:hover {
+  color: #fff;
 }
 
 /* Footer Styles */
 footer {
-    background-image: linear-gradient( rgba(128, 128, 128, 0),rgba(0, 0, 0, 0.877));
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    width: 100%;
+  background-image: linear-gradient(
+    rgba(128, 128, 128, 0),
+    rgba(0, 0, 0, 0.877)
+  );
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%;
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .footer-container div {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
 }
 
 .footer-container h3 {
-    font-size: 1.2rem;
-    color: #f5f5f5;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  margin-bottom: 10px;
 }
 
-.footer-container p, .footer-container a {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin: 5px 0;
-    text-decoration: none;
+.footer-container p,
+.footer-container a {
+  font-size: 0.9rem;
+  color: #f5f5f5;
+  margin: 5px 0;
+  text-decoration: none;
 }
 
 .footer-container a:hover {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .footer-bottom {
-    border-top: 1px solid #444;
-    padding-top: 10px;
-    font-size: 0.8rem;
-    color: #aaa;
-    margin-top: 10px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 10px;
 }
 
 .footer-bottom p {
-    margin: 0;
+  color: #f5f5f5;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
